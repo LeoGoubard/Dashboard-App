@@ -12,8 +12,8 @@ import Header from "../../components/Header";
 import LineChart from "../../components/LineChart";
 import GeographyChart from "../../components/GeographyChart";
 import StatBox from "../../components/StatBox";
-/* import BarChart from "../../components/BarChart";
-import ProgressCircle from "../../components/ProgressCircle"; */
+import BarChart from "../../components/BarChart";
+import ProgressCircle from "../../components/ProgressCircle";
 
 const Dashboard = () => {
   const theme = useTheme();
@@ -157,9 +157,9 @@ const Dashboard = () => {
             </Box>
             <Box>
               <IconButton>
-                {/* <DownloadOutlinedIcon
+                <DownloadOutlined
                   sx={{ fontSize: "26px", color: colors.greenAccent[500] }}
-                /> */}
+                />
               </IconButton>
             </Box>
           </Box>
@@ -234,7 +234,7 @@ const Dashboard = () => {
             alignItems="center"
             mt="25px"
           >
-            {/* <ProgressCircle size="125" /> */}
+            <ProgressCircle size="125" />
             <Typography
               variant="h5"
               color={colors.greenAccent[500]}
@@ -258,8 +258,8 @@ const Dashboard = () => {
             Sales Quantity
           </Typography>
           <Box height="250px" mt="-20px">
-{/*             <BarChart isDashboard={true} />
- */}          </Box>
+             <BarChart isDashboard={true} />
+          </Box>
         </Box>
         <Box
           gridColumn="span 4"
