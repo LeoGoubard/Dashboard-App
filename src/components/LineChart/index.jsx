@@ -10,6 +10,7 @@ const LineChart = ({ isCustomLineColors = false, isDashboard = false }) => {
   return (
     <ResponsiveLine
       data={data}
+      enableArea
       theme={{
         axis: {
           domain: {

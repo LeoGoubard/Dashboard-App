@@ -9,8 +9,6 @@ import {
   PeopleOutlined,
   ContactsOutlined,
   ReceiptOutlined,
-  PersonOutlined,
-  CalendarTodayOutlined,
   HelpOutlineOutlined,
   BarChartOutlined,
   PieChartOutlineOutlined,
@@ -44,7 +42,7 @@ const Sidebar = () => {
   const colors = tokens(theme.palette.mode);
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [selected, setSelected] = useState("Dashboard");
-
+  console.log(selected);
   return (
     <Box
       sx={{
@@ -114,7 +112,7 @@ const Sidebar = () => {
                   Leo G.
                 </Typography>
                 <Typography variant="h5" color={colors.greenAccent[500]}>
-                  VP Fancy Admin
+                  Admin
                 </Typography>
               </Box>
             </Box>
@@ -165,20 +163,6 @@ const Sidebar = () => {
             >
               Pages
             </Typography>
-            <Item
-              title="Profile Form"
-              to="/form"
-              icon={<PersonOutlined />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="Calendar"
-              to="/calendar"
-              icon={<CalendarTodayOutlined />}
-              selected={selected}
-              setSelected={setSelected}
-            />
             <Item
               title="FAQ Page"
               to="/faq"
